@@ -79,7 +79,6 @@ async function updateUser(request, response) {
         });
     }
 
-
     console.log(nome)
     console.log("xxx", request.body)
     let query = '';
@@ -93,7 +92,6 @@ async function updateUser(request, response) {
     }
 
      
-
     connection.query(query, params, (err, results) => {
         if (err) {
             console.error("Erro ao atualizar dados do usuário:", err);
